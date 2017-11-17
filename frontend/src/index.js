@@ -8,22 +8,16 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 
-// const target = document.getElementById('root');
-const target = document.querySelector('#root')
-let data = (
+const target = document.getElementById('root');
+
+ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
         <App />
       </div>
     </ConnectedRouter>
-  </Provider>
-);
-// data = (
-//   <div>Test</div>
-// )
-ReactDOM.render(
-  data,
+  </Provider>,
   target
 )
 registerServiceWorker();
