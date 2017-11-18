@@ -1,20 +1,22 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import Home from '../home';
-import About from '../about';
+import { Link } from 'react-router-dom';
+// import Home from '../home';
+// import About from '../about';
+// import AeroMap from '../../components/map';
+import Main from '../../components/main'
+import './style.css'; 
 
 const App = () => (
   <div>
     <header>
       <Link to="/">Home</Link>
+      <Link to="/map">Map</Link>
       <Link to="/about-us">About</Link>
     </header>
 
-    <main>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
-    </main>
-  </div>
-)
+    <Main />
 
-export default App
+  </div>
+);
+
+export default App;
