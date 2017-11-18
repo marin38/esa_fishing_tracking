@@ -1,0 +1,7 @@
+/* .leaflet-container {
+    height: 100vh;
+    width: auto;
+} */
+.leaflet-container {
+    height: calc(100% - 40px); width: 100%; position: absolute !important;
+}
